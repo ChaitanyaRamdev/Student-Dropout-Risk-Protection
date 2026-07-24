@@ -75,4 +75,7 @@ student_dropout_app = gr.Interface(
     description="Predict whether a student has High or Low Dropout Risk."
 )
 
-student_dropout_app.launch()
+student_dropout_app.launch(
+    server_name="0.0.0.0",
+    server_port=7860
+)
